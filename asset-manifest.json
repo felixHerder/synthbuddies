@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/synthbuddies/static/css/main.febba868.chunk.css",
-    "main.js": "/synthbuddies/static/js/main.626c80f7.chunk.js",
-    "main.js.map": "/synthbuddies/static/js/main.626c80f7.chunk.js.map",
-    "runtime-main.js": "/synthbuddies/static/js/runtime-main.74970895.js",
-    "runtime-main.js.map": "/synthbuddies/static/js/runtime-main.74970895.js.map",
-    "static/css/2.c1f4f5f4.chunk.css": "/synthbuddies/static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.2ee90a95.chunk.js": "/synthbuddies/static/js/2.2ee90a95.chunk.js",
-    "static/js/2.2ee90a95.chunk.js.map": "/synthbuddies/static/js/2.2ee90a95.chunk.js.map",
-    "static/js/3.86c74cb9.chunk.js": "/synthbuddies/static/js/3.86c74cb9.chunk.js",
-    "static/js/3.86c74cb9.chunk.js.map": "/synthbuddies/static/js/3.86c74cb9.chunk.js.map",
-    "index.html": "/synthbuddies/index.html",
-    "static/css/2.c1f4f5f4.chunk.css.map": "/synthbuddies/static/css/2.c1f4f5f4.chunk.css.map",
-    "static/css/main.febba868.chunk.css.map": "/synthbuddies/static/css/main.febba868.chunk.css.map",
-    "static/js/2.2ee90a95.chunk.js.LICENSE.txt": "/synthbuddies/static/js/2.2ee90a95.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/synthbuddies/static/media/SEGA.47b4bfa9.woff"
+    "main.css": "/synthbuddies.felixherder.space/static/css/main.ea975645.chunk.css",
+    "main.js": "/synthbuddies.felixherder.space/static/js/main.626c80f7.chunk.js",
+    "main.js.map": "/synthbuddies.felixherder.space/static/js/main.626c80f7.chunk.js.map",
+    "runtime-main.js": "/synthbuddies.felixherder.space/static/js/runtime-main.b93e406c.js",
+    "runtime-main.js.map": "/synthbuddies.felixherder.space/static/js/runtime-main.b93e406c.js.map",
+    "static/css/2.c1f4f5f4.chunk.css": "/synthbuddies.felixherder.space/static/css/2.c1f4f5f4.chunk.css",
+    "static/js/2.2ee90a95.chunk.js": "/synthbuddies.felixherder.space/static/js/2.2ee90a95.chunk.js",
+    "static/js/2.2ee90a95.chunk.js.map": "/synthbuddies.felixherder.space/static/js/2.2ee90a95.chunk.js.map",
+    "static/js/3.86c74cb9.chunk.js": "/synthbuddies.felixherder.space/static/js/3.86c74cb9.chunk.js",
+    "static/js/3.86c74cb9.chunk.js.map": "/synthbuddies.felixherder.space/static/js/3.86c74cb9.chunk.js.map",
+    "index.html": "/synthbuddies.felixherder.space/index.html",
+    "static/css/2.c1f4f5f4.chunk.css.map": "/synthbuddies.felixherder.space/static/css/2.c1f4f5f4.chunk.css.map",
+    "static/css/main.ea975645.chunk.css.map": "/synthbuddies.felixherder.space/static/css/main.ea975645.chunk.css.map",
+    "static/js/2.2ee90a95.chunk.js.LICENSE.txt": "/synthbuddies.felixherder.space/static/js/2.2ee90a95.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/synthbuddies.felixherder.space/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.74970895.js",
+    "static/js/runtime-main.b93e406c.js",
     "static/css/2.c1f4f5f4.chunk.css",
     "static/js/2.2ee90a95.chunk.js",
-    "static/css/main.febba868.chunk.css",
+    "static/css/main.ea975645.chunk.css",
     "static/js/main.626c80f7.chunk.js"
   ]
 }

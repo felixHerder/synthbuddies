@@ -6,37 +6,33 @@ import Scroll from '../components/Scroll';
 import ErroBoundry from '../components/ErrorBoundry';
 import "./App.css";
 
-import { setSearchField } from '../actions';
+import { requestRobots, setSearchField } from '../actions';
 
 const mapStatetoProps = state => {
     return {
-        searchField: state.searchField
+        searchField: state.searchRobots.searchField,
+        robots: state.requestRobots.robots,
+        isPending: state.requestRobots.isPending,
+        error: state.requestRobots.error
     }
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+        onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+        onRequestRobots: () => dispatch(requestRobots())
     }
 }
 
 class App extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            robots: []
-        }
-    }
 
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(users => this.setState({ robots: users }));
+        this.props.onRequestRobots();
     }
 
     render() {
-        const frobots = this.state.robots.filter((elem) => elem.name.toLowerCase().includes(this.props.searchField.toLowerCase()));
+        const frobots = this.props.robots.filter((elem) => elem.name.toLowerCase().includes(this.props.searchField.toLowerCase()));
 
-        return !this.state.robots.length ?
+        return this.props.isPending ?
             <h1>Loading synths...</h1>
             :
             (<div className="tc">

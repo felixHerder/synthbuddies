@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Cardlist from '../components/Cardlist';
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
+import Header from '../components/Header';
 import ErroBoundry from '../components/ErrorBoundry';
 import "./App.css";
 
@@ -36,7 +37,7 @@ class App extends React.Component {
             <h1>Loading synths...</h1>
             :
             (<div className="tc">
-                <h1 className='f2'>Synthfriends</h1>
+                <Header />
                 <Searchbox searchChange={this.props.onSearchChange} />
                 <Scroll>
                     <ErroBoundry>

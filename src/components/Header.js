@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import CounterBtn from './CounterBtn';
+import CounterBtn from './CounterBtn';
 
 class Header extends Component {
   // shouldComponentUpdate(nextProps, nextState) {
@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <div>
         <h1 className='f2'>Synthfriends</h1>
-        {/* <CounterBtn color={"red"} /> */}
+        <CounterBtn color={"red"} />
       </div>
     );
   }

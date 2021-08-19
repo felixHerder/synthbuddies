@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from './Card';
+import { IRobot } from './MainPage';
 
 
-const Cardlist = ({ robots }) => {
+const Cardlist = ({ robots }: { robots: Array<IRobot> }) => {
     //if(true) throw new Error("Hell no!");
     return (
         <div>

@@ -1,19 +1,17 @@
-version: 2
+version: 2.1
+orb:
+  - node: circleci/node@4.1
 jobs:
   howdy:
-    docker:
-      - image: circleci/node@4.1
     steps:
       - checkout
       - run: echo 'Howdy first of all'
   rowdy:
-    docker:
-      - image: circleci/node@4.1
     steps:
       - checkout
       - run: echo 'Triple threat'
 workflows:
-  version: 2
+  version: 2.1
   howdy_rowdy:
     jobs:
       - howdy

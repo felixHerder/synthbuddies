@@ -1,0 +1,20 @@
+ version: 2
+ jobs:
+  howdy:
+    docker:
+      - image: circleci/node@4.1
+    steps:
+      - checkout
+      - run: echo 'Howdy first of all'
+  rowdy:
+    docker:
+      - image: circleci/node@4.1
+    steps:
+      - checkout
+      - run: echo 'Triple threat'
+  worflow:
+    version: 2
+    howdy_rowdy:
+      jobs:
+        - bobby
+        - sally

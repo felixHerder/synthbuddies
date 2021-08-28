@@ -1,12 +1,14 @@
 version: 2.1
-orb:
-  - node: circleci/node@4.1
 jobs:
+  docker: # it uses the docker executor
+      - image: circleci/ruby:2.4.1
   howdy:
     steps:
       - checkout
       - run: echo 'Howdy first of all'
   rowdy:
+    docker: # it uses the docker executor
+      - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo 'Triple threat'

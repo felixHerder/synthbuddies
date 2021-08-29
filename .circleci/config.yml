@@ -1,20 +1,33 @@
 version: 2
 jobs:
-  howdy:
-    docker:
-      - image: circleci/node@4.1
+  build:
+    docker: # it uses the docker executor
+      - image: circleci/node:14.17.5
     steps:
       - checkout
-      - run: echo 'Howdy first of all'
-  rowdy:
-    docker:
-      - image: circleci/node@4.1
+      - run: echo 'npm installing'
+      - run: npm install
+      - run: CI=true npm run build
+  test:
+    docker: # it uses the docker executor
+      - image: circleci/node:14.17.5
     steps:
       - checkout
-      - run: echo 'Triple threat'
+      - run: echo 'testing stuff'
+      - run: npm install
+      - run: npm test
+  test2:
+    docker: # it uses the docker executor
+      - image: circleci/node:14.17.5 
+    steps:
+      - checkout
+      - run: echo 'test2...'
 workflows:
-  version: 2
-  howdy_rowdy:
+  version: 2.1
+  build_test_lint:
     jobs:
-      - howdy
-      - rowdy
+      - build
+      - test2
+      - test:
+          requires:
+            - test2
